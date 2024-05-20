@@ -4,25 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        fieldset{
+            background-color: rgb(248, 210, 60)
+        }
+        legend{
+            color: red;
+            font-weight: bolder;
+            font-size: 30px;
+        }
+    </style>
 </head>
 <body>
-    <center>
-        <h1 style="color: orange;">GAMEX.REGISTER</h1>
-    </center>
-    <hr>
-    <center>
-        <table cellpadding="5">
-            <tr>
-                <br>
-                <td> | <a href="index.html">HOME</a> | </td>
-                <td><a href="tournaments.html">TOURNAMENTS</a> | </td>
-                <td><a href="blog.html">BLOG</a> | </td>
-                <td><a href="contactus.html">CONTACT US</a> | </td>
-                
-            </tr>
-        </table>
-        <br><hr>
-        <center>
+
+    <div class="header"><h1 style="margin: 50px;">GAME<sub>X</sub>.COM</h1></div>
+    <div class="mainop">
+        <a class="active" href="index.html">HOME</a>
+        <a href="tounament.html">TOUNAMENT</a>
+        <a href="news.html">NEWS</a>
+        <a href="contactus.html">CONTACT US</a>
+    </div>
             <form action="action.php" method="post">
             <fieldset style="margin-left: 25%;margin-right: 25%;">
                 <legend style="text-align: center;">REGISTER</legend>
@@ -45,7 +47,7 @@
                     </tr>
                     <tr>
                         <td>ENTER YOUR ADDRESS</td>
-                        <td><textarea name="ADDress" id="ADDress" placeholder="Your ADDress"></textarea></td>
+                        <td><textarea name="ADDress" id="ADDress" placeholder="Your Address"></textarea></td>
                     </tr>
                     <tr>
                         <td>GENDER</td>
@@ -75,7 +77,34 @@
             </fieldset>
             
             </form>
-        </center>
+            <div class="footer">
+                <table width="100%">
+                    <tr>
+                        <td class="coll1">
+                            <p>GAME<sub>X</sub>.com</p>
+                            <div class="sociallogo">
+                                <a href="steamcommunity.com/profiles/76561199118115160"><img src="img/steam.png" alt="steamlogo" width="30"></a>
+                                <a href="instagram.com/_vinu.gaming_"><img src="img/instagramlogo.png" alt="instagramlogo" width="30"></a>
+                                <a href="https://www.youtube.com/@VinuGaming2004"><img src="img/youtubelogo.png" alt="ytlogo" width="35"></a>
+                            </div>
+                        </td>
+                        <td class="coll2">
+                            <dl>
+                                <dt><p>Recent posts</p></dt>
+                                <dd>Overwatch January 28 Update Nerfs Echo, Tracer, and Zenyatta</dd>
+                            </dl>
+                        </td>
+                        <td class="coll3">
+                            <dl>
+                                <dt><p>Contacts US</p></dt>
+                                <dd>Contact No :-123456789</dd>
+                                <dd>Email :- examppleemail@gmail.com</dd>
+                            </dl>
+                        </td>
+        
+                    </tr>
+                </table>
+            </div>
         
 </body>
 </html>
