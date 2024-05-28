@@ -6,6 +6,8 @@
     <title>Gamex | News</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jaro:opsz@6..72&display=swap');
         .content{
             margin-left: 90px;
             border: solid white 1px;
@@ -17,6 +19,47 @@
             font-size: 15px;
         }
 
+        .newsblock{
+            background-color: #201f1f;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+            margin-left: 30px;
+            margin-right: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .newscontent{
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+        }
+        .newsblock td img{
+            padding-right:5px ;
+            border-radius: 10px;
+        }
+        .details{
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 30px;
+            vertical-align: top;
+            padding-left:5px ;
+        }
+        .details p{
+            color: antiquewhite;
+        }
+        .article{
+            color: rgb(225, 118, 23);
+        }
+        .details .article :hover{
+            color: rgb(225, 118, 23);
+        }
+        .details p{
+            padding-left: 5px;
+            margin-top: 10px;
+            font-size: 15px;
+            font-family: "Bebas Neue";
+        }
         
     </style>
 </head>
@@ -30,19 +73,19 @@
     </div>
 
 
-    <table class="content" >
-        <tr>
-            <td>
-                <img src="img/articles/mario(1).jpg" alt="mario">
-            </td>
-            <td>
-                <a href="mario_article.html">The Hottest Paper Mario Prices, AC Shadows Gold For Less Gold, a RoboCop Drop, and More!</a>
-            </td>
-        </tr>    
-    </table>
-
-
-
+    <div class="newsblock">
+        <table>
+            <tr>
+                <td>
+                    <img src="img/articles/fortnite/fortnite-chaper5-season-3.jpg" alt="" width="200px">
+                </td>
+                <td class="details">
+                    <a href="/news_articles/Fortnite_Chapter_5_Season_3_new_Update.html" class="article">Fortnite Chapter 5 Season 3 new Update</a>
+                    <p>Latest fortnite update</p>
+                </td>
+            </tr>
+        </table>
+    </div>
     <div class="footer">
         <table width="100%">
             <tr>
@@ -58,6 +101,7 @@
                     <dl>
                         <dt><p>Recent posts</p></dt>
                         <dd>Overwatch January 28 Update Nerfs Echo, Tracer, and Zenyatta</dd>
+                        
                     </dl>
                 </td>
                 <td class="coll3">
