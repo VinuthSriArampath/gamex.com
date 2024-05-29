@@ -35,7 +35,7 @@ body{
     cursor: pointer;
 }
 .mainop a.active{
-    padding: 15px 100px 15px 20px;
+    padding: 10px 35px 10px 15px;
     color: rgb(0, 0, 0);
     background-color: rgb(248, 210, 60);
     
